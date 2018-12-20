@@ -1,4 +1,4 @@
-#My aliases.
+#MY ALIASES
 alias c='cd /mnt/c'
 alias pf='cd /mnt/c/Program\ Files'
 alias pf86='cd /mnt/c/Program\ Files\ \(x86\)'
@@ -8,3 +8,7 @@ alias sb='source ~/.bash_aliases'
 alias code='/mnt/c/Users/Nathan/AppData/Local/Programs/Microsoft\ VS\ Code/Code.exe'
 alias codebase='cd /mnt/c/codebase'
 alias react='cd /mnt/c/codebase/react-course'
+
+#Browser
+export BROWSER='/mnt/c/Program\ Files\ (x86)\Google\Chrome\Application\chrome.exe'
+
