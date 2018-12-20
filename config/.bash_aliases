@@ -1,0 +1,10 @@
+#My aliases.
+alias c='cd /mnt/c'
+alias pf='cd /mnt/c/Program\ Files'
+alias pf86='cd /mnt/c/Program\ Files\ \(x86\)'
+alias gaac='git add --all && git commit -m'
+alias vb='vi ~/.bash_aliases'
+alias sb='source ~/.bash_aliases'
+alias code='/mnt/c/Users/Nathan/AppData/Local/Programs/Microsoft\ VS\ Code/Code.exe'
+alias codebase='cd /mnt/c/codebase'
+alias react='cd /mnt/c/codebase/react-course'
