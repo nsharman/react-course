@@ -7,8 +7,8 @@ alias vb='vi ~/.bash_aliases'
 alias sb='source ~/.bash_aliases'
 alias code='/mnt/c/Users/Nathan/AppData/Local/Programs/Microsoft\ VS\ Code/Code.exe'
 alias codebase='cd /mnt/c/codebase'
+
+# React application.
 alias react='cd /mnt/c/codebase/react-course'
-
-#Browser
-export BROWSER='/mnt/c/Program\ Files\ (x86)\Google\Chrome\Application\chrome.exe'
-
+alias startbabel='babel src/app.jsx --out-file=public/scripts/app.js --presets=env,react --watch'
+alias startapp='live-server public'
