@@ -26,7 +26,16 @@ const onRemoveAll = () => {
     render();
 };
 
-const numbers= [55, 101, 1000];
+const onMakeDecision = () => {
+
+    const randomNum = Math.floor(Math.random() * app.options.length);
+    const option = app.options[randomNum];
+    alert(option);
+
+    console.log(randomNum);
+};
+
+const appRoot = document.getElementById('app');
 
 const render = () => {
     const template = (
@@ -34,7 +43,7 @@ const render = () => {
             <h1>{app.title}</h1>
             {app.subtitle && <p>{app.subtitle}</p>}
             <p>{app.options.length > 0 ? 'Here are your options' : 'No options'}</p>
-            <p>{app.options.length}</p>
+            <button disabled={!app.options.length} onClick={onMakeDecision}>What should I do?</button>
             <button onClick={onRemoveAll}>Remove all</button>
             <ol>
                 {app.options.map((option) => <li key={option}>{option}</li>)}
@@ -45,8 +54,6 @@ const render = () => {
             </form>
         </div>
     );
-    
-    const appRoot = document.getElementById('app');
     
     ReactDOM.render(template, appRoot);
 };
