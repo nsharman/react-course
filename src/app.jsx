@@ -13,6 +13,18 @@ class IndecisionApp extends React.Component {
         };
     }
 
+    componentDidMount() {
+        console.log('componentDidMount');
+    }
+
+    componentDidUpdate(prevProps, prevState) {
+        console.log('componentDidUpdate');
+    }
+
+    componentWillUnmount() {
+        console.log('componentWillUnmount');
+    }
+
     handlePick() {
 
         const randomNum = Math.floor(Math.random() * this.state.options.length);
