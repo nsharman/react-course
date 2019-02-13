@@ -7,8 +7,9 @@
   "author": "nsharman <nate.harman@outlook.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "live-server public/",
-    "build": "babel src/app.jsx --out-file=public/scripts/app.js --presets=env,react --watch"
+    "start": "live-server public/",
+    "build": "webpack --watch",
+    "build-babel": "babel src/app.jsx --out-file=public/scripts/app.js --presets=env,react --watch"
   },
   "dependencies": {
     "babel-cli": "6.24.1",
