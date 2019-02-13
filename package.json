@@ -7,14 +7,17 @@
   "author": "nsharman <nate.harman@outlook.com>",
   "license": "MIT",
   "scripts": {
-    "start": "live-server public/",
+    "dev": "concurrently \"npm run build\" \"npm run start\"",
     "build": "webpack --watch",
+    "start": "live-server public/",
     "build-babel": "babel src/app.jsx --out-file=public/scripts/app.js --presets=env,react --watch"
   },
   "dependencies": {
     "babel-cli": "6.24.1",
     "babel-preset-env": "1.5.2",
     "babel-preset-react": "6.24.1",
-    "live-server": "^1.2.1"
+    "concurrently": "^4.1.0",
+    "live-server": "^1.2.1",
+    "webpack": "3.1.0"
   }
 }
