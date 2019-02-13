@@ -72,23 +72,28 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__utils_js__ = __webpack_require__(1);
 
 
-console.log(__WEBPACK_IMPORTED_MODULE_0__utils_js__["b" /* square */](4));
+console.log(__WEBPACK_IMPORTED_MODULE_0__utils_js__["c" /* square */](4));
 console.log(__WEBPACK_IMPORTED_MODULE_0__utils_js__["a" /* add */](5, 4));
+console.log(__WEBPACK_IMPORTED_MODULE_0__utils_js__["b" /* default */](5, 4));
 
 /***/ }),
 /* 1 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return square; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return add; });
 console.log('utils.js is running');
 
 const square = (x) => x * x;
+/* harmony export (immutable) */ __webpack_exports__["c"] = square;
+
 
 const add = (a, b) => a + b;
+/* harmony export (immutable) */ __webpack_exports__["a"] = add;
 
 
+const subtract = (a, b) => a - b;
+
+/* harmony default export */ __webpack_exports__["b"] = (subtract);
 
 /***/ })
 /******/ ]);
